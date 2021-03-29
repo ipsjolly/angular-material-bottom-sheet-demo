@@ -1,0 +1,20 @@
+<div style="
+text-align: center;
+padding: 20px;
+">
+
+  <!-- <button (click)="openTemplateSheetMenu()">Open Template Bottom Sheet</button> -->
+
+  <button (click)="openComponentSheetMenu()">Open Component Bottom Sheet</button>
+
+  <ng-template let-bottomSheetRef="bottomSheetRef" #templateBottomSheet>
+    <ul>
+      <li>Link 1</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+      <li><button (click)="closeTemplateSheetMenu()">Dismiss Action Sheet</button></li>
+    </ul>
+  </ng-template>
+
+
+</div>

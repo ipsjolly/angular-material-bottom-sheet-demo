@@ -1,0 +1,14 @@
+<div>
+    <ul>
+        <li *ngFor="let action of actions">
+
+            <ng-container *ngIf="action.link; else elseTemplate">
+                <a [routerLink]="[action.link]">{{action.name}}</a>
+            </ng-container>
+            <ng-template #elseTemplate>
+                <button (click)="closeComponentSheetMenu()">{{action.name}}</button>
+            </ng-template>
+
+        </li>
+    </ul>
+</div>
